@@ -1792,6 +1792,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@vant/weapp@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.nlark.com/@vant/weapp/download/@vant/weapp-1.6.9.tgz#f4840a6207dfc51cd4534db9626f6989c7c355f4"
+  integrity sha1-9IQKYgffxRzUU025Ym9picfDVfQ=
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.npm.taobao.org/@vue/babel-helper-vue-jsx-merge-props/download/@vue/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"

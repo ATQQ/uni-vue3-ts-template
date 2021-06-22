@@ -4,6 +4,7 @@
         <view>
             <text class="title">{{ title }}</text>
         </view>
+        <van-button type="primary">测试</van-button>
     </view>
 </template>
 

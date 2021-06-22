@@ -7,7 +7,11 @@ uni-app vue3-ts 模板项目
 * [x] Vue3
 * [ ] vuex
 * [ ] 类Axios[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
-* [ ] [Vue3-Vant](https://vant-contrib.gitee.io/vant/v3/#/zh-CN)
+* [x] [Vant Weapp](https://vant-contrib.gitee.io/vant-weapp/#/home)
+
+初次使用应 拷贝`node_modules/@vant` 到 wxcomponents中
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTYyNDM3NjI0ODcyMg==624376248723)
 
 ### dev
 * [ ] eslint
