@@ -88,6 +88,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "*",
     "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.29.0",
@@ -100,8 +101,11 @@
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "node-sass": "4",
+    "postcss": "^7",
+    "postcss-class-rename": "^1.0.1",
     "postcss-comment": "^2.0.0",
     "sass-loader": "10.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^3.0.0"
   },
   "browserslist": [

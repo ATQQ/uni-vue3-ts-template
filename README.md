@@ -17,7 +17,7 @@ uni-app vue3-ts 模板项目
 * [x] eslint
 * [x] sass
 * [x] typescript
-* [ ] tailwindcss
+* [x] tailwindcss
 * [x] less
 ## 使用
 ### 安装依赖
