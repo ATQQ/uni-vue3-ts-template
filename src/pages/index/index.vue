@@ -9,16 +9,17 @@
 </template>
 
 <script lang="ts">
-    import {
-        defineComponent
-    } from "vue";
-    export default defineComponent({
-        setup() {
-            return {
-                title: "hello",
-            };
-        },
-    });
+import {
+  defineComponent,
+} from 'vue';
+
+export default defineComponent({
+  setup() {
+    return {
+      title: 'hello',
+    };
+  },
+});
 </script>
 
 <style lang="scss">
