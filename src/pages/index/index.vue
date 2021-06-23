@@ -8,6 +8,9 @@
     <view><text>Vuex4 Demo</text></view>
     <VuexDemo />
     <van-button type="primary" @click="handleHttp">Login 测试</van-button>
+    <view>
+      <text class="less-style">less style</text>
+    </view>
   </view>
 </template>
 
@@ -19,10 +22,12 @@ import { userApi } from '@/api';
 export default defineComponent({
   setup() {
     const handleHttp = () => {
-      userApi.login('account', '123456')
+      userApi
+        .login('account', '123456')
         .then((res) => {
           console.log(res);
-        }).catch((err) => {
+        })
+        .catch((err) => {
           console.log(err);
         });
     };
@@ -50,5 +55,12 @@ export default defineComponent({
 .title {
   font-size: 36upx;
   color: red;
+}
+</style>
+
+<style lang="less">
+.less-style {
+  color: purple;
+  font-size: 40upx;
 }
 </style>
