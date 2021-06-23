@@ -13,5 +13,8 @@ module.exports = {
   rules: {
     'no-undef': 'off',
     'no-unused-vars': 'off',
+    'no-param-reassign': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
   },
 };
