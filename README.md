@@ -6,7 +6,6 @@ uni-app vue3-ts 模板项目
 ### prod
 * [x] Vue3
 * [x] Vuex4
-* [ ] tailwindcss
 * [x] Axios-mini[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
 * [x] [Vant Weapp](https://vant-contrib.gitee.io/vant-weapp/#/home)
 
@@ -18,7 +17,8 @@ uni-app vue3-ts 模板项目
 * [x] eslint
 * [x] sass
 * [x] typescript
-
+* [ ] tailwindcss
+* [ ] less
 ## 使用
 ### 安装依赖
 ```
@@ -45,5 +45,7 @@ yarn build
 ```
 yarn build:mp-weixin
 ```
+
+然后将编译结果`dist/dev/mp-weixin`导入微信开发者工具即可运行
 
 其它更多脚本 查看 [package.json](./package.json)中的scripts
