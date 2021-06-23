@@ -6,7 +6,8 @@ uni-app vue3-ts 模板项目
 ### prod
 * [x] Vue3
 * [x] Vuex4
-* [ ] Axios-mini[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
+* [ ] tailwindcss
+* [x] Axios-mini[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
 * [x] [Vant Weapp](https://vant-contrib.gitee.io/vant-weapp/#/home)
 
 初次使用应 拷贝`node_modules/@vant` 到 wxcomponents中

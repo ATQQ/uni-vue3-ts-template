@@ -7,17 +7,28 @@
     <van-button type="primary">Vant UI测试</van-button>
     <view><text>Vuex4 Demo</text></view>
     <VuexDemo />
+    <van-button type="primary" @click="handleHttp">Login 测试</van-button>
   </view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import VuexDemo from '@/components/VuexDemo.vue';
+import { userApi } from '@/api';
 
 export default defineComponent({
   setup() {
+    const handleHttp = () => {
+      userApi.login('account', '123456')
+        .then((res) => {
+          console.log(res);
+        }).catch((err) => {
+          console.log(err);
+        });
+    };
     return {
       title: 'hello',
+      handleHttp,
     };
   },
   components: { VuexDemo },
