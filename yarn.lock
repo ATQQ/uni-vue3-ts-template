@@ -1929,10 +1929,10 @@
     "@typescript-eslint/types" "4.28.0"
     eslint-visitor-keys "^2.0.0"
 
-"@vant/weapp@^1.6.9":
-  version "1.6.9"
-  resolved "https://registry.nlark.com/@vant/weapp/download/@vant/weapp-1.6.9.tgz#f4840a6207dfc51cd4534db9626f6989c7c355f4"
-  integrity sha1-9IQKYgffxRzUU025Ym9picfDVfQ=
+"@vant/weapp@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.npmmirror.com/@vant/weapp/download/@vant/weapp-1.9.2.tgz#406174c11d3f421dbbeff995a556ce1d30629908"
+  integrity sha1-QGF0wR0/Qh277/mVpVbOHTBimQg=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -10924,7 +10924,7 @@ shell-quote@^1.6.1:
   resolved "https://registry.nlark.com/shell-quote/download/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
 
-shelljs@^0.8.1:
+shelljs@^0.8.1, shelljs@^0.8.4:
   version "0.8.4"
   resolved "https://registry.nlark.com/shelljs/download/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
   integrity sha1-3naE/ut2f4cWsyYHiooAh1iQ48I=
