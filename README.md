@@ -25,13 +25,17 @@ yarn install
 
 ### 开发热重载
 #### 微信小程序
-```
+```sh
+yarn serve
+# or
 yarn dev:mp-weixin
 ```
 
 ### 生产环境打包构建
 #### 微信小程序
 ```
+yarn build
+# or
 yarn build:mp-weixin
 ```
 
