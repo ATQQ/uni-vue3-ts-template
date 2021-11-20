@@ -11,7 +11,6 @@ Vue3的Web应用模板请使用[vite-vue3-template](https://github.com/ATQQ/vite
 * [x] Axios-mini[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
 * [x] [Vant Weapp](https://vant-contrib.gitee.io/vant-weapp/#/home)
 
-
 ### dev
 * [x] eslint
 * [x] sass
@@ -37,5 +36,13 @@ yarn build:mp-weixin
 ```
 
 然后将编译结果`dist/dev/mp-weixin`导入微信开发者工具即可运行
+
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTYzNzQxNjc3MjA4Mw==637416772083)
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTYzNzQxNjg4MTUwNA==637416881504)
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTYzNzQxNjY3OTY0NQ==637416679645)
+
 
 其它更多脚本 查看 [package.json](./package.json)中的scripts
