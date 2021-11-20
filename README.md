@@ -9,7 +9,7 @@ uni-app vue3-ts 模板项目
 * [x] Axios-mini[axios-miniprogram](https://github.com/fluffff/axios-miniprogram#readme)
 * [x] [Vant Weapp](https://vant-contrib.gitee.io/vant-weapp/#/home)
 
-初次使用应 拷贝`node_modules/@vant` 到 wxcomponents中
+初次使用应 拷贝`node_modules/@vant` 到 src/wxcomponents中
 
 ![图片](https://img.cdn.sugarat.top/mdImg/MTYyNDM3NjI0ODcyMg==624376248723)
 
