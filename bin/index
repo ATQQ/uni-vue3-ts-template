@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const shell = require('shelljs');
+const fs = require('fs');
+const { resolve } = require('path');
+
+const isWxComponentsExist = fs.existsSync(resolve('src/wxcomponents/@vant'));
+if (!isWxComponentsExist) {
+  shell.cp('-R', 'node_modules/@vant', 'src/wxcomponents');
+}
