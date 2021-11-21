@@ -3,7 +3,8 @@ uni-app vue3-ts 模板项目
 
 本项目主要用于小程序开发使用，不支持H5
 
-Vue3的Web应用模板请使用[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)工程
+* Vue3的Web应用模板：[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)工程
+* Vue2的uni-app模板：[uni-app-template](https://github.com/ATQQ/uni-app-template)
 ## feature
 ### prod
 * [x] Vue3
