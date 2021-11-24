@@ -6,7 +6,7 @@
     "eslint:init": "eslint --init",
     "postinstall": "node bin/index",
     "serve": "npm run dev:mp-weixin",
-    "bui;d": "npm run build:mp-weixin",
+    "build": "npm run build:mp-weixin",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.vue ./src",
     "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
     "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
@@ -106,7 +106,7 @@
     "sass-loader": "10.0.1",
     "shelljs": "^0.8.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "typescript": "^3.0.0"
+    "typescript": "^4.5.2"
   },
   "browserslist": [
     "Android >= 4",
