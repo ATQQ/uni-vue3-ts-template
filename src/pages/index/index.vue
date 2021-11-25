@@ -4,7 +4,7 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <van-button type="primary">Vant UI测试</van-button>
+    <van-button @click="handleChangeTitle" type="primary">Vant UI({{ num }})</van-button>
     <view><text>Vuex4 Demo</text></view>
     <VuexDemo />
     <van-button type="primary" @click="handleHttp">Login 测试</van-button>
@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, reactive, toRefs } from 'vue';
 import VuexDemo from '@/components/VuexDemo.vue';
 import { userApi } from '@/api';
 
@@ -34,9 +34,18 @@ export default defineComponent({
           console.log(err);
         });
     };
+
+    const data = reactive({
+      num: 'hello world',
+    });
+    const handleChangeTitle = () => {
+      data.num = `${Math.round(Math.random() * 100)}`;
+    };
     return {
-      title: 'hello',
+      title: 'hello world',
+      ...toRefs(data),
       handleHttp,
+      handleChangeTitle,
     };
   },
   components: { VuexDemo },

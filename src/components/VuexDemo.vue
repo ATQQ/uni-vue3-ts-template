@@ -32,7 +32,7 @@ export default defineComponent({
   },
 });
 </script>
-<style>
+<style lang="less">
 .vuex-demo {
   text-align: center;
 }
