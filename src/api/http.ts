@@ -4,7 +4,15 @@ import axios from 'axios'
 import buildURL from 'axios/lib/helpers/buildURL'
 
 const instance = axios.create({
+  // Web 侧可以通过 vite.config.js 中的 proxy 配置，指定代理
+  // 小程序APP里需写完整路径，如 https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release
+  // 可使用条件编译,详见 https://uniapp.dcloud.io/tutorial/platform.html#preprocessor
+  // #ifdef H5
   baseURL: import.meta.env.VITE_APP_AXIOS_BASE_URL,
+  // #endif
+  // #ifndef H5
+  baseURL: 'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
+  // #endif
   adapter(config) {
     console.log('request adapter ↓↓')
     console.log(config)
@@ -47,7 +55,7 @@ instance.interceptors.request.use(config => {
   const { method, params } = config
   // 附带鉴权的token
   const headers: any = {
-    token: localStorage.getItem('token')
+    token: uni.getStorageSync('token')
   }
   // 不缓存get请求
   if (method === 'get') {
@@ -73,7 +81,7 @@ instance.interceptors.request.use(config => {
  */
 instance.interceptors.response.use(v => {
   if (v.data?.code === 401) {
-    localStorage.removeItem('token')
+    uni.removeStorageSync('token')
     // alert('即将跳转登录页。。。', '登录过期')
     // setTimeout(redirectHome, 1500)
     return v.data
