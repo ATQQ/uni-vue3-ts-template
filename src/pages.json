@@ -18,6 +18,12 @@
       "style": {
         "navigationBarTitleText": "Axios（网络请求示例）"
       }
+    },
+    {
+      "path": "pages/uview/index",
+      "style": {
+        "navigationBarTitleText": "uView 示例组件"
+      }
     }
   ],
   "globalStyle": {
@@ -25,5 +31,10 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+    }
   }
 }

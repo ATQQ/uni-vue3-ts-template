@@ -14,13 +14,13 @@ const phone = ref('12345678901')
 const getCode = () => {
   userApi
     .getCode(phone.value)
-    .then(v => {
+    .then((v) => {
       uni.showToast({
         title: `${v.num}`,
         icon: 'success'
       })
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err)
       uni.showToast({
         title: '获取验证码失败',

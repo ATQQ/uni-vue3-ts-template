@@ -12,5 +12,5 @@ onHide(() => {
 })
 </script>
 <style lang="scss">
-@import './uni.scss';
+@import 'vk-uview-ui/index.scss';
 </style>

@@ -29,7 +29,7 @@ const isEven = computed(() => store.count % 2 === 0)
 
 // add 方法
 const add = () =>
-  store.$patch(v => {
+  store.$patch((v) => {
     v.count += 1
   })
 // or actions

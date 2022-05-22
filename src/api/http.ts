@@ -1,5 +1,4 @@
 import axios from 'axios'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import buildURL from 'axios/lib/helpers/buildURL'
 
@@ -11,20 +10,14 @@ const instance = axios.create({
   baseURL: import.meta.env.VITE_APP_AXIOS_BASE_URL,
   // #endif
   // #ifndef H5
+  // @ts-ignore
   baseURL: 'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
   // #endif
   adapter(config) {
     console.log('request adapter ↓↓')
     console.log(config)
-    const {
-      url,
-      method,
-      data,
-      params,
-      headers,
-      baseURL,
-      paramsSerializer
-    } = config
+    const { url, method, data, params, headers, baseURL, paramsSerializer } =
+      config
     return new Promise((resolve, reject) => {
       uni.request({
         method: method!.toUpperCase() as any,
@@ -51,7 +44,7 @@ const instance = axios.create({
 /**
  * 请求拦截
  */
-instance.interceptors.request.use(config => {
+instance.interceptors.request.use((config) => {
   const { method, params } = config
   // 附带鉴权的token
   const headers: any = {
@@ -79,7 +72,7 @@ instance.interceptors.request.use(config => {
 /**
  * 响应拦截
  */
-instance.interceptors.response.use(v => {
+instance.interceptors.response.use((v) => {
   if (v.data?.code === 401) {
     uni.removeStorageSync('token')
     // alert('即将跳转登录页。。。', '登录过期')
@@ -87,7 +80,6 @@ instance.interceptors.response.use(v => {
     return v.data
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   if ((v.status || v.statusCode) === 200) {
     return v.data
