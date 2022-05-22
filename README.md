@@ -4,11 +4,11 @@ uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
 支持小程序，H5，App
 
 * Vue3的Web应用模板：[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)
-* Vue2的uni-app模板：[uni-app-template](https://github.com/ATQQ/uni-app-template) = 不再维护
+* ~~Vue2的uni-app模板：[uni-app-template(不再维护)](https://github.com/ATQQ/uni-app-template)~~
 
-|                                     H5                                      |                                 微信小程序                                  |                                  App(iOS)                                   | App(Android) |
-| :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :----------: |
-| ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc4MzUyMQ==653193783521) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc1Mzk1MQ==653193753951) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMDc2NTcwNg==653210765706) |    待验证    |
+|                                     H5                                      |                                 微信小程序                                  |                                  App(iOS)                                   |                                        App(Android)                                         |
+| :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc4MzUyMQ==653193783521) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc1Mzk1MQ==653193753951) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMDc2NTcwNg==653210765706) | <img src="https://img.cdn.sugarat.top/mdImg/MTY1MzIxMzkyOTQxNg==653213929416" width="360"/> |
 
 ## Use This Template
 ```sh
@@ -50,7 +50,7 @@ pnpm dev:mp-weixin
 然后将编译结果`dist/dev/mp-weixin`导入微信开发者工具即可运行
 
 <details>
-<summary>点击查看 微信开发者工具导入示例</summary>
+<summary>点击查看 导入详细步骤</summary>
 
 ![图片](https://img.cdn.sugarat.top/mdImg/MTYzNzQxNjc3MjA4Mw==637416772083)
 
@@ -94,6 +94,30 @@ pnpm dev:h5:ssr
 ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMjk3NDM0NQ==653212974345)
 
 #### Android模拟器运行
+这里以[夜神模拟器](https://www.yeshen.com/blog/)为例
+
+<details>
+<summary>点击查看 详细步骤</summary>
+
+先通过 HBuilderX 修改模拟器端口为 `62001`
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxNDAzMjIwNg==653214032206)
+
+打开夜神模拟器
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxNDA5OTYxNg==653214099616)
+
+选择运行到 Android 基座
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxNDEzMzI0OA==653214133248)
+
+选择已经打开的模拟器，点击运行即可
+![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxNDIxNjczNw==653214216737)
+
+![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMzkyOTQxNg==653213929416)
+
+</details>
+
 
 ## 打包构建
 ### 微信小程序
