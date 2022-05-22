@@ -1,51 +1,99 @@
-import axios from 'axios-miniprogram';
+import axios from 'axios'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import buildURL from 'axios/lib/helpers/buildURL'
 
-const http = axios;
+const instance = axios.create({
+  // Web 侧可以通过 vite.config.js 中的 proxy 配置，指定代理
+  // 小程序APP里需写完整路径，如 https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release
+  // 可使用条件编译,详见 https://uniapp.dcloud.io/tutorial/platform.html#preprocessor
+  // #ifdef H5
+  baseURL: import.meta.env.VITE_APP_AXIOS_BASE_URL,
+  // #endif
+  // #ifndef H5
+  baseURL: 'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
+  // #endif
+  adapter(config) {
+    console.log('request adapter ↓↓')
+    console.log(config)
+    const {
+      url,
+      method,
+      data,
+      params,
+      headers,
+      baseURL,
+      paramsSerializer
+    } = config
+    return new Promise((resolve, reject) => {
+      uni.request({
+        method: method!.toUpperCase() as any,
+        url: baseURL?.endsWith('/')
+          ? baseURL
+          : `${baseURL}/${buildURL(url, params, paramsSerializer)}`,
+        header: headers,
+        data,
+        dataType: 'json',
+        responseType: config.responseType,
+        success: (res: any) => {
+          console.log('request success ↓↓')
+          console.log(res)
+          resolve(res)
+        },
+        fail: (err: any) => {
+          reject(err)
+        }
+      })
+    })
+  }
+})
 
-// 请求base路径
-http.defaults.baseURL = process.env.AXIOS_BASEURL;
-http.defaults.headers = {
-  'content-Type': 'application/json',
-};
+/**
+ * 请求拦截
+ */
+instance.interceptors.request.use(config => {
+  const { method, params } = config
+  // 附带鉴权的token
+  const headers: any = {
+    token: uni.getStorageSync('token')
+  }
+  // 不缓存get请求
+  if (method === 'get') {
+    headers['Cache-Control'] = 'no-cache'
+  }
+  // delete请求参数放入body中
+  if (method === 'delete') {
+    headers['Content-type'] = 'application/json;'
+    Object.assign(config, {
+      data: params,
+      params: {}
+    })
+  }
 
-http.interceptors.request.use(
-  (config) => {
-    // 所有请求都携带token
-    Object.assign(config.headers, {
-      token: uni.getStorageSync('token'),
-    });
-
-    // 发送之前操作config
-    return config;
-  },
-  (err) => {
-    if (err.status !== 200) {
-      // 处理错误
-    }
-    return Promise.reject(err);
-  },
-);
+  return {
+    ...config,
+    headers
+  }
+})
 
 /**
  * 响应拦截
  */
-http.interceptors.response.use(
-  (response: any) => {
-    // 对拿到的数据做一些额外操作操作 (如无权限,直接跳转首页)
-    const { code, msg } = response.data;
-    if (code !== 0) {
-      if (msg) {
-        uni.showToast({
-          title: msg,
-        });
-      }
-      // 走catch逻辑
-      return Promise.reject(response.data);
-    }
-    // 返回前操作
-    return response.data;
-  },
-  (err) => Promise.reject(err),
-);
+instance.interceptors.response.use(v => {
+  if (v.data?.code === 401) {
+    uni.removeStorageSync('token')
+    // alert('即将跳转登录页。。。', '登录过期')
+    // setTimeout(redirectHome, 1500)
+    return v.data
+  }
 
-export default http;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  if ((v.status || v.statusCode) === 200) {
+    return v.data
+  }
+  // alert(v.statusText, '网络错误')
+  return Promise.reject(v)
+})
+
+export default instance
