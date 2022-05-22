@@ -9,14 +9,19 @@ uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
 |                                     H5                                      |                                 微信小程序                                  | App(IOS) | App(Android) |
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :------: | :----------: |
 | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc4MzUyMQ==653193783521) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc1Mzk1MQ==653193753951) |  待验证  |    待验证    |
-## feature
-### prod
+
+## Use This Template
+```sh
+npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
+```
+## Feature
+### Prod
 * [x] [Vue3](https://vuejs.org/)
 * [x] [Pinia](https://pinia.vuejs.org/) - replace vuex
 * [x] [Axios](https://github.com/axios/axios)
 * UI
   * 待定
-### dev
+### Dev
 * [x] [Vite](https://github.com/vitejs/vite)
 * [x] [TypeScript](https://github.com/microsoft/TypeScript/#readme)
 * [x] [Sass](https://github.com/sass/sass)
@@ -35,7 +40,7 @@ npm i -g pnpm
 pnpm install
 ```
 
-### 本地启动指令
+### 本地启动
 #### 微信小程序
 ```sh
 pnpm dev:mp-weixin
