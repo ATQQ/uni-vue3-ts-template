@@ -1,14 +1,14 @@
 <template>
   <view class="index-page">
     <Hello />
-    <h2>
+    <text class="h2">
       查看其它页面↓
-    </h2>
-    <div>
+    </text>
+    <view>
       <navigator v-for="(v, idx) in pages" :key="idx" :url="v.url">{{
         v.title
       }}</navigator>
-    </div>
+    </view>
   </view>
 </template>
 
@@ -33,7 +33,10 @@ const pages = reactive([
   font-style: normal;
   text-align: center;
 }
-
+.h2 {
+  color: green;
+  font-size: 50rpx;
+}
 navigator {
   color: #1e80ff;
 }

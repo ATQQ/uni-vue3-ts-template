@@ -1,13 +1,13 @@
 <template>
-  <div class="pinia-demo">
-    <h2>Pinia(Replace Vuex)</h2>
-    <h3>{{ isEven ? "Even" : "Odd" }}</h3>
-    <h3>{{ count }}</h3>
-    <div>
+  <view class="pinia-demo">
+    <view class="h2">Pinia(Replace Vuex)</view>
+    <text class="h3">{{ isEven ? 'Even' : 'Odd' }}</text>
+    <text>{{ count }}</text>
+    <view>
       <button @click="add">Sync Add</button>
       <button @click="asyncAdd">Async Add</button>
-    </div>
-  </div>
+    </view>
+  </view>
 </template>
 <script setup lang="ts">
 import { computed } from 'vue'
@@ -48,11 +48,12 @@ const asyncAdd = () => store.asyncIncrease()
 .pinia-demo {
   text-align: center;
 
-  h2 {
+  .h2 {
     color: red;
+    font-size: 40rpx;
   }
 
-  h3 {
+  .h3 {
     font-weight: bold;
   }
 }
