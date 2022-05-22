@@ -16,11 +16,11 @@
   "extends": [
     "airbnb-base",
     "eslint:recommended",
+    "prettier",
     "plugin:vue/vue3-essential",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
-  "plugins": ["vue", "@typescript-eslint", "todo-ddl"],
+  "plugins": ["vue", "@typescript-eslint", "todo-ddl", "prettier"],
   "rules": {
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
@@ -41,6 +41,7 @@
     "@typescript-eslint/no-namespace": "off",
     "no-undef": "off",
     "no-promise-executor-return": "off",
-    "vue/multi-word-component-names": "off"
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
   }
 }

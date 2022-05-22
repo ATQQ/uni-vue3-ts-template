@@ -6,6 +6,18 @@
       "style": {
         "navigationBarTitleText": "uni-app-home"
       }
+    },
+    {
+      "path": "pages/pinia/index",
+      "style": {
+        "navigationBarTitleText": "状态管理工具（pinia）"
+      }
+    },
+    {
+      "path": "pages/axios/index",
+      "style": {
+        "navigationBarTitleText": "Axios（网络请求示例）"
+      }
     }
   ],
   "globalStyle": {

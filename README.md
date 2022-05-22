@@ -8,8 +8,8 @@ uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
 ## feature
 ### prod
 * [x] [Vue3](https://vuejs.org/)
-* [ ] [Pinia](https://pinia.vuejs.org/) - replace vuex
-* [ ] [Axios Mini Program](https://github.com/fluffff/axios-miniprogram#readme) - Support uni-app
+* [x] [Pinia](https://pinia.vuejs.org/) - replace vuex
+* [x] [Axios](https://github.com/axios/axios)
 * UI
   * 
 ### dev

@@ -49,6 +49,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-3040820220424001",
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3040820220424001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3040820220424001",
+    "axios": "^0.27.2",
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
     "vue-i18n": "^9.1.9"
@@ -72,6 +73,7 @@
     "eslint-plugin-todo-ddl": "^1.1.1",
     "eslint-plugin-vue": "^9.0.1",
     "less": "^4.1.2",
+    "prettier": "^2.6.2",
     "sass": "^1.52.1",
     "typescript": "^4.6.3",
     "vite": "^2.9.6",
