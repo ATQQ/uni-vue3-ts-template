@@ -2,6 +2,24 @@ import axios from 'axios'
 // @ts-ignore
 import buildURL from 'axios/lib/helpers/buildURL'
 
+const getFullURL: (baseURL: string | undefined, url: string | undefined, params: Object, paramsSerializer: any) => string = (baseURL, url, params, paramsSerializer) => {
+  let fullURL = ''
+  if(url!.startsWith('http')) {
+    fullURL = buildURL(url, params, paramsSerializer)
+  } else {
+    let splitBaseURL = baseURL!.split('')
+    const splitURL = url!.split('')
+    if(splitBaseURL[splitBaseURL.length - 1] === '/' &&  splitURL[splitURL.length - 1] === '/') {
+      splitBaseURL = splitBaseURL.splice(splitBaseURL.length - 1, 1)
+    } else if (splitBaseURL[splitBaseURL.length - 1] !== '/' &&  splitURL[splitURL.length - 1] !== '/') {
+      splitBaseURL.push('/')
+    }
+    fullURL = splitBaseURL.join('') + buildURL(splitURL.join(''), params, paramsSerializer)
+  }
+
+  return fullURL
+}
+
 const instance = axios.create({
   // Web 侧可以通过 vite.config.js 中的 proxy 配置，指定代理
   // 小程序APP里需写完整路径，如 https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release
@@ -21,9 +39,7 @@ const instance = axios.create({
     return new Promise((resolve, reject) => {
       uni.request({
         method: method!.toUpperCase() as any,
-        url: baseURL?.endsWith('/')
-          ? baseURL
-          : `${baseURL}/${buildURL(url, params, paramsSerializer)}`,
+        url: getFullURL(baseURL, url, params, paramsSerializer),
         header: headers,
         data,
         dataType: 'json',
