@@ -21,7 +21,7 @@ const instance = axios.create({
     return new Promise((resolve, reject) => {
       uni.request({
         method: method!.toUpperCase() as any,
-        url: getFullURL(baseURL, url, params, paramsSerializer),
+        url: getFullURL(baseURL || ‘’, url!, params, paramsSerializer),
         header: headers,
         data,
         dataType: 'json',
