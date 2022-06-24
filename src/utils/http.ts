@@ -1,22 +1,14 @@
 // @ts-ignore
 import buildURL from 'axios/lib/helpers/buildURL'
+import type { AxiosRequestConfig } from 'axios'
 
-export const getFullURL: (
-  baseURL: string | undefined,
-  url: string | undefined,
-  params: Object,
-  paramsSerializer: any
-) => string = (baseURL, url, params, paramsSerializer) => {
-  let fullURL = ''
-  if (url!.startsWith('http')) {
-    fullURL = buildURL(url, params, paramsSerializer)
-  } else {
-    const patternStart = /^\//
-    const patternEnd = /\/$/
-    const newBaseURL = patternEnd.test(baseURL!) ? baseURL!.replace(patternEnd, '') : baseURL
-    const newURL = patternStart.test(url!) ? url : `/${url}`
-    fullURL = newBaseURL! + newURL!
+type ParamsSerializer = AxiosRequestConfig['paramsSerializer']
+
+export function getFullUrl(baseURL: string, url: string, params: Record<string, any>, paramsSerializer: ParamsSerializer) {
+  if (url.startsWith('http')) {
+    return buildURL(url, params, paramsSerializer)
   }
-
-  return fullURL
+  baseURL = baseURL.endsWith('/') ? baseURL : `${baseURL}/`
+  url = url.startsWith('/') ? url.slice(1) : url
+  return buildURL(`${baseURL}${url}`, params, paramsSerializer)
 }
