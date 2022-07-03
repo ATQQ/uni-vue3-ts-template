@@ -10,8 +10,8 @@ uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
 | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc4MzUyMQ==653193783521) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzE5Mzc1Mzk1MQ==653193753951) | ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMDc2NTcwNg==653210765706) | <img src="https://img.cdn.sugarat.top/mdImg/MTY1MzIxMzkyOTQxNg==653213929416" width="360"/> |
 
 其它模板
+* Vue3的uni-app 纯js模板：[uni-app-template](https://github.com/ATQQ/uni-app-template)
 * Vue3的Web应用模板：[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)
-* ~~Vue2的uni-app模板：[uni-app-template(不再维护)](https://github.com/ATQQ/uni-app-template)~~
 ## Use This Template
 ```sh
 npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
