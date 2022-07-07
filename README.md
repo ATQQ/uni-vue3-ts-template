@@ -22,8 +22,8 @@ npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
 * [x] [Pinia](https://pinia.vuejs.org/) - replace vuex
 * [x] [Axios](https://github.com/axios/axios)
 * UI/组件库
-  * [uView](https://vkuviewdoc.fsq.pub/) - vk-uview-ui
-  * [uni-ui](https://github.com/dcloudio/uni-ui) - 待接入
+  * [x] [uView](https://vkuviewdoc.fsq.pub/) - vk-uview-ui
+  * [ ] [uni-ui](https://github.com/dcloudio/uni-ui) - 待接入
 ### Dev
 * [x] [Vite](https://github.com/vitejs/vite)
 * [x] [TypeScript](https://github.com/microsoft/TypeScript/#readme)
@@ -32,6 +32,9 @@ npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
 * [x] [Eslint](https://eslint.org/)
 * [x] [Prettier](https://prettier.io/)
 * [x] [Vitest](https://vitest.dev/) - replace jest
+* [ ] LintStaged
+* [ ] GitHooks
+* [ ] StyleLint
 
 ## 使用
 ### 安装依赖
