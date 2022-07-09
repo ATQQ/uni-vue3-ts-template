@@ -13,12 +13,12 @@ export default defineConfig({
         target:
           'https://service-rbji0bev-1256505457.cd.apigw.tencentcs.com/release',
         changeOrigin: true,
-        rewrite: p => p.replace(/^\/api/, '')
+        rewrite: (p) => p.replace(/^\/api/, '')
       },
       '/api-prod/': {
         target: 'http://localhost:3001',
         changeOrigin: true,
-        rewrite: p => p.replace(/^\/api-prod/, '')
+        rewrite: (p) => p.replace(/^\/api-prod/, '')
       }
     }
   },
