@@ -9,7 +9,7 @@ function login(account: string, pwd: string) {
 
 /**
  * 获取验证码
- * @param mobile 手机号
+ * @param phone 手机号
  */
 function getCode(phone: string): Promise<{ num: number }> {
   return http.get('random/code', {
