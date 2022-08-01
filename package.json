@@ -34,8 +34,7 @@
     "lint": "eslint --ext .ts,.js,.vue --fix ./",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage",
-    "preinstall": "npx only-allow pnpm"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3050020220623004",

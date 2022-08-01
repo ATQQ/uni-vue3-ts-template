@@ -12,6 +12,14 @@ uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
 其它模板
 * Vue3的uni-app 纯js模板：[uni-app-template](https://github.com/ATQQ/uni-app-template)
 * Vue3的Web应用模板：[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)
+
+## Env Suggest
+**Node >= 14.19**
+
+**pnpm 7**
+
+**Registry taobao - https://registry.npmmirror.com/**
+
 ## Use This Template
 ```sh
 npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
@@ -38,6 +46,7 @@ npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
 
 ## 使用
 ### 安装依赖
+**建议使用pnpm，依赖安装速度更快**
 ```sh
 npm i -g pnpm
 ```
