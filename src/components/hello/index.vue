@@ -46,3 +46,9 @@ const title = ref('Hello')
   font-size: $title-size;
 }
 </style>
+
+<style lang="less" scoped>
+.title {
+  font-size: @title-size;
+}
+</style>
