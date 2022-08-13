@@ -62,6 +62,10 @@ pnpm install
 pnpm dev:mp-weixin
 ```
 
+> 如果dev的时候发现报错，可以尝试删除`node_modules`之后再在命令行中运行`pnpm install --shamefully-hoist`重新安装依赖再`pnpm dev:mp-weixin`
+>
+> [详细参考文档](https://pnpm.io/zh/faq#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%883)
+
 然后将编译结果`dist/dev/mp-weixin`导入微信开发者工具即可运行
 
 <details>
@@ -151,3 +155,27 @@ pnpm build:h5:ssr
 基于 `HBuilderX` 参考[官方文档](https://hx.dcloud.net.cn/Tutorial/App/SafePack)进行进一步的操作
 
 其它更多运行脚本 查看 [package.json](./package.json)中的scripts
+
+## css预处理
+
+### 已配置`scss`和`less`全局变量
+```typescript
+// vite.config.ts
+export default defineConfig({
+  // ......
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/static/styles/variables.scss";'
+      },
+      less: {
+        additionalData: '@import "@/static/styles/variables.less";'
+      }
+    }
+  }
+})
+```
+
+
+
+`additionalData`的值是文件的路径，可以按照自己业务需求去修改，**如果项目样式变量分的比较细，可以使用一个样式文件引入多个变量样式文件，然后在这里引入入口文件**
