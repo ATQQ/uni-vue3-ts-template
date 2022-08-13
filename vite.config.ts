@@ -27,5 +27,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@components': path.resolve(__dirname, './src/components')
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/static/styles/variables.scss";'
+      }
+    }
   }
 })

@@ -40,3 +40,9 @@ const title = ref('Hello')
   color: #8f8f94;
 }
 </style>
+
+<style lang="scss" scoped>
+.title {
+  font-size: $title-size;
+}
+</style>
