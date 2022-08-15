@@ -29,12 +29,13 @@ export default defineConfig({
     }
   },
   css: {
+    // 配置`scss`和`less`全局变量
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "@/static/styles/vars/_base.scss";'
+        additionalData: '@import "@/styles/vars/_base.scss";'
       },
       less: {
-        additionalData: '@import "@/static/styles/vars/_base.less";'
+        additionalData: '@import "@/styles/vars/_base.less";'
       }
     }
   }
