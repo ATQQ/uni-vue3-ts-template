@@ -31,10 +31,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "@/static/styles/variables.scss";'
+        additionalData: '@import "@/static/styles/vars/_base.scss";'
       },
       less: {
-        additionalData: '@import "@/static/styles/variables.less";'
+        additionalData: '@import "@/static/styles/vars/_base.less";'
       }
     }
   }
