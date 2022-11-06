@@ -62,9 +62,13 @@ pnpm install
 pnpm dev:mp-weixin
 ```
 
-> 如果dev的时候发现报错，可以尝试删除`node_modules`之后再在命令行中运行`pnpm install --shamefully-hoist`重新安装依赖再`pnpm dev:mp-weixin`
+> **Q1：** 如果dev的时候发现报错，可以尝试删除`node_modules`之后再在命令行中运行`pnpm install --shamefully-hoist`重新安装依赖再`pnpm dev:mp-weixin`
 >
 > [详细参考文档](https://pnpm.io/zh/faq#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%883)
+
+> **Q2：** 如果运行白屏，有报错信息 “app.js错误ReferenceError: regeneratorRuntime is not defined”
+> 
+> 参考[解决方案](https://blog.csdn.net/FUFCY/article/details/125160828) 给微信小程序IDE开启**增强编译选项**
 
 然后将编译结果`dist/dev/mp-weixin`导入微信开发者工具即可运行
 
