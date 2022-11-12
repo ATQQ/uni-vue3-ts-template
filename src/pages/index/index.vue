@@ -1,8 +1,7 @@
 <template>
   <view class="index-page">
     <Hello />
-    <UnoCss />
-    <text class="h2"> 查看其它页面↓ </text>
+    <text class="c-green text-2xl"> 查看其它页面↓ </text>
     <view>
       <navigator v-for="(v, idx) in pages" :key="idx" :url="v.url">{{
         v.title
@@ -14,7 +13,6 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 import Hello from '@/components/hello/index.vue'
-import UnoCss from '@/components/unocss/index.vue'
 
 const pages = reactive([
   {
@@ -28,6 +26,10 @@ const pages = reactive([
   {
     title: 'uView Demo',
     url: '/pages/uview/index'
+  },
+  {
+    title: 'UnoCss Demo',
+    url: '/pages/unocss/index'
   }
 ])
 </script>
@@ -37,11 +39,9 @@ const pages = reactive([
   font-style: normal;
   text-align: center;
 }
-.h2 {
-  color: green;
-  font-size: 50rpx;
-}
+
 navigator {
   color: #1e80ff;
+  padding: 10rpx;
 }
 </style>
