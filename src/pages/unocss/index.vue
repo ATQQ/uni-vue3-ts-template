@@ -93,5 +93,3 @@ function switchFlag() {
   flag.value = !flag.value
 }
 </script>
-
-<style scoped></style>
