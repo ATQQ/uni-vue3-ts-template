@@ -2,7 +2,7 @@
   <view class="index-page">
     <Hello />
     <UnoCss />
-    <text class="h2"> 查看其它页面↓ </text>
+    <text class="h2"> 查看其它页面示例↓ </text>
     <view>
       <navigator v-for="(v, idx) in pages" :key="idx" :url="v.url">{{
         v.title
