@@ -28,7 +28,7 @@ const pages = reactive([
     url: '/pages/uview/index'
   },
   {
-    title: 'UnoCss Demo',
+    title: 'UnoCSS Demo',
     url: '/pages/unocss/index'
   }
 ])

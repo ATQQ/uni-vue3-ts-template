@@ -24,6 +24,12 @@
       "style": {
         "navigationBarTitleText": "uView 示例组件"
       }
+    },
+    {
+      "path": "pages/unocss/index",
+      "style": {
+        "navigationBarTitleText": "UnoCSS 示例"
+      }
     }
   ],
   "globalStyle": {
