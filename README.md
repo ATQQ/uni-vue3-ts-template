@@ -1,9 +1,11 @@
 # uni-vue3-ts-template
-uni-app Vue3 + TypeScript + Vite + Pinia 模板项目
+uni-app Vue3 + TypeScript + Vite + Pinia + Unocss 模板项目
 
 支持小程序，H5，App
 
 ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxODc4OTk1OQ==653218789959)
+
+![Unocss](https://fastly.jsdelivr.net/gh/MellowCo/image-host/2022/202211121156442.png)
 
 |                                     H5                                      |                                 微信小程序                                  |                                  App(iOS)                                   |                                        App(Android)                                         |
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
@@ -40,9 +42,10 @@ npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
 * [x] [Eslint](https://eslint.org/)
 * [x] [Prettier](https://prettier.io/)
 * [x] [Vitest](https://vitest.dev/) - replace jest
-* [ ] LintStaged
+* [x] [unocss](https://github.com/unocss/unocss) - 即时按需原子 css 引擎
 * [ ] GitHooks
-* [ ] StyleLint
+* ~~LintStaged~~
+* ~~StyleLint~~
 
 ## 使用
 ### 安装依赖
@@ -247,6 +250,5 @@ export default defineConfig({
 * [unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) - 兼容小程序 unocss 预设
 
 > 支持小程序，h5，app
-
 
 ![](https://fastly.jsdelivr.net/gh/MellowCo/image-host/2022/202211121156442.png)
