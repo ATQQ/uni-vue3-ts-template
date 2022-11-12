@@ -1,6 +1,6 @@
 <template>
   <view class="axios-demo">
-    <view class="h1">Axios Page</view>
+    <view class="title-h1">Axios Page</view>
     <input type="number" v-model="phone" />
     <button @click="getCode">获取验证码(GET)</button>
   </view>
@@ -34,7 +34,7 @@ const getCode = () => {
 .axios-demo {
   text-align: center;
 }
-.h1 {
+.title-h1 {
   font-size: 50rpx;
 }
 </style>
