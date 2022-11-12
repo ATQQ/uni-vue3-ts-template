@@ -38,7 +38,7 @@ specifiers:
   sass: ^1.53.0
   typescript: ^4.7.4
   unocss: ^0.46.4
-  unocss-preset-weapp: ^0.2.0
+  unocss-preset-weapp: ^0.2.1
   vite: ^2.9.14
   vite-plugin-eslint: ^1.6.1
   vitest: ^0.16.0
@@ -91,7 +91,7 @@ devDependencies:
   sass: 1.53.0
   typescript: 4.7.4
   unocss: 0.46.4_vite@2.9.14
-  unocss-preset-weapp: 0.2.0
+  unocss-preset-weapp: 0.2.1
   vite: 2.9.14_less@4.1.3+sass@1.53.0
   vite-plugin-eslint: 1.6.1_eslint@8.19.0+vite@2.9.14
   vitest: 0.16.0_oqwe34bwctofr2moiqrut6yqwm
@@ -4434,13 +4434,13 @@ packages:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
 
-  /unocss-preset-weapp/0.2.0:
-    resolution: {integrity: sha512-uKpB/lvEtK1gWiqwfCC2i1f2GfuXJgK9wLZ+UV51D/REv4mJ3Q1MYraRQslMZuObhX1K56LydPa5WaHMQauH+g==}
+  /unocss-preset-weapp/0.2.1:
+    resolution: {integrity: sha512-uJlfTJ5WBnA1tqVuIQ7XcGauX3FNLD6fqbYf79grN6O3cfCi8wkAxddbybQIgPkDDRplpCvs6tdO1/l6YJgSvg==}
     dependencies:
       '@rollup/pluginutils': 5.0.2
       '@unocss/core': 0.46.4
-      unplugin-attributify-to-class: 0.1.16
-      unplugin-transform-class: 0.1.20
+      unplugin-attributify-to-class: 0.2.0
+      unplugin-transform-class: 0.2.0
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -4482,24 +4482,28 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-attributify-to-class/0.1.16:
-    resolution: {integrity: sha512-KdkdtWNH/oaomBSUQMdUzn3fCP8sKoy3tKPIHrCGG9/+ZsKp5TFLIWb+ktMjB4UNzdiddiWYKiFQ37luO9XOGw==}
+  /unplugin-attributify-to-class/0.2.0:
+    resolution: {integrity: sha512-vvF2jn17E2wl/Sf6htC3EZ9kyW3xaX4APz2fgyvyi620CyhFVJotUFj7xGEk02MXr36u7ylK3PHkgpJxS5lsvA==}
     dependencies:
-      '@rollup/pluginutils': 4.2.1
-      unplugin: 0.9.6
-      unplugin-transform-class: 0.1.20
+      '@rollup/pluginutils': 5.0.2
+      unplugin: 0.10.2
+      unplugin-transform-class: 0.2.0
+    transitivePeerDependencies:
+      - rollup
     dev: true
 
-  /unplugin-transform-class/0.1.20:
-    resolution: {integrity: sha512-10a2RAqYMWlh5ARwwqfwN8bJops1y734vTlJ7SgopAfA/gS36MB6u2c7hJGxYJj9QrHxHDtJMRaSOzZG5+3Ppw==}
+  /unplugin-transform-class/0.2.0:
+    resolution: {integrity: sha512-ReppJAAy4K9Iga66PGYci5S/Jodqm05WgiDoNpAfJn2bqE/X2mWwFIqNsHWWXsFGPDIzbaFHQvIGVIcHAixQrg==}
     dependencies:
       '@meoc/utils': 0.1.9
-      '@rollup/pluginutils': 4.2.1
-      unplugin: 0.9.6
+      '@rollup/pluginutils': 5.0.2
+      unplugin: 0.10.2
+    transitivePeerDependencies:
+      - rollup
     dev: true
 
-  /unplugin/0.9.6:
-    resolution: {integrity: sha512-YYLtfoNiie/lxswy1GOsKXgnLJTE27la/PeCGznSItk+8METYZErO+zzV9KQ/hXhPwzIJsfJ4s0m1Rl7ZCWZ4Q==}
+  /unplugin/0.10.2:
+    resolution: {integrity: sha512-6rk7GUa4ICYjae5PrAllvcDeuT8pA9+j5J5EkxbMFaV+SalHhxZ7X2dohMzu6C3XzsMT+6jwR/+pwPNR3uK9MA==}
     dependencies:
       acorn: 8.8.1
       chokidar: 3.5.3
