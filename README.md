@@ -99,7 +99,8 @@ pnpm dev:h5:ssr
 ![图片](https://img.cdn.sugarat.top/mdImg/MTY1MzIxMTE0MDEzMg==653211140132)
 
 ### App
-
+>**Q1：** 如启动到App侧有报错？
+>请更新至最新的HBuilderX-Alpha客户端
 #### 安装一些必要工具
 需要使用 `uni-app` 官方提供的 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 启动项目
 
