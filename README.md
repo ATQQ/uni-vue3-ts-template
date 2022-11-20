@@ -60,7 +60,7 @@ pnpm install
 
 **MAC M1(ARM芯片)，其它操作系统无需关注**，正常运行需要手动安装 `esbuild-darwin-64`即可
 ```sh
-pnpm add esbuild-darwin-64 -D
+pnpm add esbuild-darwin-64@0.15.13 -D
 ```
 
 ## 本地启动
