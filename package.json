@@ -36,6 +36,7 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "cz": "git add . && czg",
+    "postinstall": "simple-git-hooks",
     "updatehooks": "git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks"
   },
   "dependencies": {
