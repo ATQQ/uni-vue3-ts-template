@@ -27,6 +27,7 @@ specifiers:
   '@vitest/ui': ^0.10.5
   axios: ^0.27.2
   c8: ^7.11.3
+  cz-git: ^1.4.1
   czg: ^1.4.1
   eslint: ^8.19.0
   eslint-config-airbnb-base: ^15.0.0
@@ -65,6 +66,7 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3060920221114001_vue@3.2.45
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-3060920221114001_vue@3.2.45
   axios: 0.27.2
+  cz-git: 1.4.1
   pinia: 2.0.14_e7lp6ggkpgyi5vqd44m2kxvk6i
   vk-uview-ui: 1.3.7
   vue: 3.2.45
@@ -2452,6 +2454,10 @@ packages:
 
   /csstype/2.6.20:
     resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==}
+
+  /cz-git/1.4.1:
+    resolution: {integrity: sha512-EOtuitcnfxde8t3NNTKh2YxEJhLXGiVlKSVaZipK3+DVo135rEUifAfqxkslM66Nf6ZO7a+3JR+XAOLhMXUAjQ==}
+    dev: false
 
   /czg/1.4.1:
     resolution: {integrity: sha512-ZjK46yrHgRbypfKAzv8D/UIWiz3BgGfO0cSPAGpk4VO9FmJ3tqaLqelrNyiVjHqOyg1dOi8hoxBHdrdvwa1eaQ==}

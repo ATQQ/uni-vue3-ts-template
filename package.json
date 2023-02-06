@@ -53,6 +53,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3060920221114001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3060920221114001",
     "axios": "^0.27.2",
+    "cz-git": "^1.4.1",
     "pinia": "^2.0.14",
     "vk-uview-ui": "^1.3.7",
     "vue": "^3.2.41",
