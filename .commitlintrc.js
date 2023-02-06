@@ -1,11 +1,3 @@
-/*
- * @Author: 王云飞
- * @Date: 2023-02-02 22:34:52
- * @LastEditTime: 2023-02-03 22:03:15
- * @LastEditors: 王云飞
- * @Description:
- *
- */
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   extends: ['@commitlint/config-conventional'],
