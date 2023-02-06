@@ -43,7 +43,7 @@ npx degit atqq/uni-vue3-ts-template#main my-uni-vue3-ts-vite-project
 * [x] [Prettier](https://prettier.io/)
 * [x] [Vitest](https://vitest.dev/) - replace jest
 * [x] [unocss](https://github.com/unocss/unocss) - 即时按需原子 css 引擎
-* [ ] GitHooks Husky
+* [x] GitHooks [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks#readme)
 * ~~LintStaged~~
 * ~~StyleLint~~
 
