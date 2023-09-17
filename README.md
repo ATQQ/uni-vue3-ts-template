@@ -101,8 +101,6 @@ pnpm dev:mp-weixin
 ```sh
 # CSR
 pnpm dev:h5
-# SSR
-pnpm dev:h5:ssr
 ```
 
 根据提示，打开对应地址即可访问
@@ -166,8 +164,6 @@ pnpm build:mp-weixin
 ```sh
 # CSR
 pnpm build:h5
-# SSR
-pnpm build:h5:ssr
 ```
 
 ### App
