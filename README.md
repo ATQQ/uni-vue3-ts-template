@@ -60,7 +60,9 @@ pnpm install
 
 **MAC M1(ARM芯片)，其它操作系统无需关注**，正常运行需要手动安装 `esbuild-darwin-64`即可
 ```sh
-pnpm add esbuild-darwin-64@0.15.13 -D
+pnpm add @esbuild/darwin-x64@0.18.20 -D
+
+# 如HBuilderx 运行报错，通常是依赖版本的问题，可根据提示信息选择对应的 version
 ```
 
 ## 本地启动
