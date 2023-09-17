@@ -16,9 +16,9 @@ uni-app Vue3 + TypeScript + Vite + Pinia + Unocss 模板项目
 * Vue3的Web应用模板：[vite-vue3-template](https://github.com/ATQQ/vite-vue3-template)
 
 ## Env Suggest
-**Node >= 14.19**
+**Node >= 18**
 
-**pnpm 7**
+**pnpm 8**
 
 **Registry taobao - https://registry.npmmirror.com/**
 
@@ -61,9 +61,13 @@ pnpm install
 **MAC M1(ARM芯片)，其它操作系统无需关注**，正常运行需要手动安装 `esbuild-darwin-64`即可
 ```sh
 pnpm add @esbuild/darwin-x64@0.18.20 -D
-
-# 如HBuilderx 运行报错，通常是依赖版本的问题，可根据提示信息选择对应的 version
 ```
+安装的版本或者指令可以运行下面这个脚本获取
+```sh
+node arm-esbuild-version.js
+```
+![](https://img.cdn.sugarat.top/mdImg/MTY5NDk1ODQ0Njk1Ng==694958446956)
+
 
 ## 本地启动
 ### 微信小程序
