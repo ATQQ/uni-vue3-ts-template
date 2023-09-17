@@ -105,7 +105,7 @@ pnpm dev:h5:ssr
 
 ### App
 >**Q1：** 如启动到App侧有报错？
->请更新至最新的HBuilderX-Alpha客户端
+><span style="color:red;">请更新至最新的HBuilderX-Alpha客户端</span>
 #### 安装一些必要工具
 需要使用 `uni-app` 官方提供的 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 启动项目
 
