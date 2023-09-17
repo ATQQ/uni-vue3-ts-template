@@ -43,7 +43,8 @@
         <view
           h-100
           w-100
-          bg="cover [url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)]"
+          bg-cover
+          class="bg-[url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)]"
         />
       </view>
       <view ml-5>
