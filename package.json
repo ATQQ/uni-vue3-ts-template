@@ -37,7 +37,8 @@
     "test:coverage": "vitest run --coverage",
     "cz": "git add . && czg",
     "postinstall": "simple-git-hooks",
-    "updatehooks": "git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks"
+    "updatehooks": "git config core.hooksPath .git/hooks/ && rm -rf .git/hooks && npx simple-git-hooks",
+    "mac:m1:esbuild": "node arm-esbuild-version.js"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3081220230802001",

@@ -65,6 +65,9 @@ pnpm add @esbuild/darwin-x64@0.18.20 -D
 安装的版本或者指令可以运行下面这个脚本获取
 ```sh
 node arm-esbuild-version.js
+
+# 或者
+pnpm mac:m1:esbuild
 ```
 ![](https://img.cdn.sugarat.top/mdImg/MTY5NDk1ODQ0Njk1Ng==694958446956)
 
@@ -96,6 +99,10 @@ pnpm dev:mp-weixin
 ![图片](https://img.cdn.sugarat.top/mdImg/MTYzNzQxNjY3OTY0NQ==637416679645)
 
 </details>
+
+>Q3：真机运行白屏，模拟器，开发环境都正常
+>
+>参考[issue 25](https://github.com/ATQQ/uni-vue3-ts-template/issues/25)，使用build 生产的资源进行真机调试就可以了
 
 ### H5
 ```sh
