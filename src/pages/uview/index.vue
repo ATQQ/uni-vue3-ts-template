@@ -9,5 +9,23 @@
     <u-button size="default">江湖</u-button>
     <u-button size="medium">夜雨</u-button>
     <u-button size="mini">十年灯</u-button>
+    <u-form :model="form" class="mt-40rpx">
+      <u-form-item label="姓名" prop="name"
+        ><u-input v-model="form.name"
+      /></u-form-item>
+    </u-form>
   </view>
 </template>
+<script setup lang="ts">
+import { reactive } from 'vue'
+
+const form = reactive({
+  name: '',
+  birthday: '',
+  intro: '',
+  sex: '',
+  checkbox: '',
+  radio: '',
+  switchVal: false
+})
+</script>
